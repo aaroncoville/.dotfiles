@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
 if [[ -z $STOW_FOLDERS ]]; then
     STOW_FOLDERS="nvim"
 fi
