@@ -1,0 +1,6 @@
+[user]
+  email = amcoville@gmail.com
+  name = "Aaron Coville"
+
+[includeIf "gitdir:~/code/work/"]
+  path = ~/.gitconfig-smartthings
