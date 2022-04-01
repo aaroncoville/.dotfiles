@@ -40,7 +40,7 @@
   prompt =
 [color "status"]
   added = green
-  changed = white
+  changed = magenta 
   header =
   localBranch =
   nobranch =
