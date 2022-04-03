@@ -81,8 +81,9 @@ antigen init ~/.antigenrc
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(1password aws command-not-found docker docker-compose git fzf gh gnu-utils gradle httpie taskwarrior terraform )
-
-source $(dirname $(gem which colorls))/tab_complete.sh
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+#source $(dirname $(gem which colorls))/tab_complete.sh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
