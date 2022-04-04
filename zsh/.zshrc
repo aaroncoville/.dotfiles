@@ -223,3 +223,4 @@ export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f
 # Fig post block. Keep at the bottom of this file.
 eval "$(fig init zsh post)"
 
+export SDKMAN_OFFLINE_MODE=false
