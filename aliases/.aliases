@@ -1,0 +1,14 @@
+alias lc='colorls -la'
+alias ls="colorls --sd -A"
+
+alias vim="nvim"
+
+# Always enable colored `grep` output
+alias grep='grep --color=auto '
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\\: .*|GET \\/.*\""

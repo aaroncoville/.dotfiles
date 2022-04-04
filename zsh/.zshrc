@@ -11,6 +11,12 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/aaroncoville/.oh-my-zsh"
 
+# Set shell to use homebrew installed ruby
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
+
 # Sourc eplugin manager
 source $ZSH/custom/antigen.zsh
 antigen init ~/.antigenrc
@@ -83,6 +89,7 @@ antigen init ~/.antigenrc
 plugins=(1password aws command-not-found docker docker-compose git fzf gh gnu-utils gradle httpie taskwarrior terraform )
 source $(dirname $(gem which colorls))/tab_complete.sh
 source $ZSH/oh-my-zsh.sh
+source ~/.aliases
 
 # User configuration
 
