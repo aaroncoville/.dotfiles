@@ -1,2 +1,3 @@
 .DS_Store
 mutt/.mutt/cache/**
+bin/.local/bin/fig
