@@ -94,7 +94,7 @@ plugins=(1password command-not-found git fzf gh gnu-utils httpie taskwarrior )
 source $(dirname $(gem which colorls))/tab_complete.sh
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
-
+source "$HOME/.sdkman/bin/sdkman-init.sh" 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
