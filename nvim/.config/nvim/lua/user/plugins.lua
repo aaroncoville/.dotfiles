@@ -60,7 +60,8 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
 
   -- Colorschemes
-  use { 'dracula/vim', as = 'dracula' }
+ -- Using Packer:
+  use 'Mofiqul/dracula.nvim' 
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
