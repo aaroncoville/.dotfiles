@@ -91,7 +91,7 @@ antigen init ~/.antigenrc
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(1password command-not-found git fzf gh gnu-utils httpie taskwarrior )
+plugins=(1password command-not-found git fzf gnu-utils httpie taskwarrior )
 source $(dirname $(gem which colorls))/tab_complete.sh
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
