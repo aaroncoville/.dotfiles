@@ -6,7 +6,9 @@ antigen use oh-my-zsh
 antigen bundle 1password
 antigen bundle aws
 antigen bundle command-not-found
+antigen bundle docker
 antigen bundle git
+antigen bundle gh
 antigen bundle fzf
 antigen bundle gh
 antigen bundle gnu-utils
