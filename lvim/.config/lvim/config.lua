@@ -5,6 +5,25 @@ lvim.colorscheme = "dracula"
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+
+vim.api.nvim_set_keymap("n", "<leader>xx", "<cmd>Trouble<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>xl", "<cmd>Trouble loclist<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>",
+  {silent = true, noremap = true}
+)
+vim.api.nvim_set_keymap("n", "gR", "<cmd>Trouble lsp_references<cr>",
+  {silent = true, noremap = true}
+)
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
 -- edit a default keymapping
@@ -58,5 +77,16 @@ lvim.plugins = {
     "ray-x/lsp_signature.nvim",
     config = function() require "lsp_signature".on_attach() end,
     event = "BufRead"
+  },
+  {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
   }
 }
