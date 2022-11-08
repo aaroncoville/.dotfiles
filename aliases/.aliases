@@ -1,7 +1,7 @@
 alias lc='colorls -la'
 alias ls="colorls --sd -A"
 
-alias vim="nvim"
+# alias vim="lvim"
 
 # Always enable colored `grep` output
 alias grep='grep --color=auto '
